@@ -1,0 +1,38 @@
+# searchstack structure
+
+1. FrontEnd
+    -. Incharge : 윤송이(inakarune@naver.com)
+    -. use Angular.
+    -. folder : public/index.html - initial view html. setting necessary javascript : jquery, angular, etc.
+                public/css - style.css
+                public/js/app.js - searchstack module file.
+                         /appRoutes.js - view routing file.
+                         /controllers - angular controller definition.
+                         /services  - controller function definition : where sending request to node server.
+                public/libs - library of angular, angular-route, bootstrap, jquery
+                public/views - view html folder.
+
+2. BackEnd 
+    -. Incharge : 이종익(sow4063@gmail.com)
+    -. use Express, mongoose
+    -. folder : server.js -. db and server setup.
+                          -. server start(port 8080).
+                app/routes.js - serve route handling.
+                   /models - database model definition. 
+                           - db model query handling(search, insert, update...).
+                           - db schema definition
+                config/db.js - database url setting.                
+
+3. Database
+    -. Incharge : 최설범(whjitexiger0322@gmail.com)
+    -. use : mongodb(default port:27017)
+    -. install : brew install mongodb -g
+    -. start : mongod --dbpath folderpath
+                ex) /usr/local/bin/mongod --dbpath /Users/Desktop/dicdb
+    -. command connection : Enter 'mongo' in prompt command.
+                            use dbname, db.collection.find(), db.collection.count().            
+
+4. Deploy
+    -. Incharge : 이종익
+    -. Web Service Hosting : DigitalOcean.
+    -. Use Grunt file.                
