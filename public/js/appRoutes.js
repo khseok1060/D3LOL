@@ -22,6 +22,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller : 'searchController'
 		});
 
+
 	$locationProvider.html5Mode(true);
 
 }]);
