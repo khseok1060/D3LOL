@@ -18,4 +18,5 @@ If you have any questions or requests, email us at [chris@scotch.io](mailto:chri
 - Single Page AngularJS Animations
 
 
-aiueo#
+#style
+ref - https://google.github.io/styleguide/javascriptguide.xml
