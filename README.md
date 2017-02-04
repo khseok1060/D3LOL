@@ -9,5 +9,5 @@
 5. Start up the server: `node server.js`
 6. View in browser at http://localhost:8080
 
-#style
+##Style
 ref - https://google.github.io/styleguide/javascriptguide.xml
