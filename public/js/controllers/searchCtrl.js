@@ -1,7 +1,7 @@
-angular.module('searchCtrl', []).controller('searchController', function($scope) {
+angular.module('searchCtrl', [])
+	.controller('searchController', function($scope, searchService) {
 
-	$scope.searchKeyword = function(){
+		$scope.keyword = '';
 
-	}
 
-});
+	});
