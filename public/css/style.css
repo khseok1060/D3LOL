@@ -45,3 +45,11 @@ form {
 	display: block;
 	margin: 0 auto;
 }
+
+.userContainer {
+	width: 700px;
+}
+
+.userStack {
+	float: left;
+}
