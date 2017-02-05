@@ -1,10 +1,10 @@
 angular.module('searchCtrl', [])
-	.controller('searchController', function($scope, searchService) {
+	.controller('searchController', ['$scope', 'nickNameInfo', function($scope, nickNameInfo) {
 
 		$scope.keyword = '';
 		$scope.search = function(nickName){
-			searchService.search(nickName);
+			nickNameInfo.search(nickName);
 		};
 
 
-	});
+	}]);
