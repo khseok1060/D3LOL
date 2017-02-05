@@ -3,20 +3,25 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 	$routeProvider
 
 		// home page
-		.when('/', {
-			templateUrl: 'views/home.html',
-			controller: 'MainController'
+		.when('/rank', {
+			templateUrl: 'views/rank.html',
+			controller: 'rankController'
 		})
 
-		.when('/nerds', {
-			templateUrl: 'views/nerd.html',
-			controller: 'NerdController'
+		.when('/multiSearch', {
+			templateUrl: 'views/multiSearch.html',
+			controller: 'multiSearchController'
 		})
 
-		.when('/geeks', {
-			templateUrl: 'views/geek.html',
-			controller: 'GeekController'	
+		.when('/champion', {
+			templateUrl: 'views/champion.html',
+			controller: 'championController'	
+		})
+		.when('/search', {
+			templateUrl : 'views/search.html',
+			controller : 'searchController'
 		});
+
 
 	$locationProvider.html5Mode(true);
 

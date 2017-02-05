@@ -1,0 +1,28 @@
+<div class="userContainer" ng-repeat="stack in user">
+	<div class="userStack">
+		<img ng-src="{{ stack.charImg }}">
+		<p>{{ stack.nickName }}</p>
+		<p>{{ stack.level }}</p>
+	</div>
+	<div class="userStack">
+		<p>{{ stack.victory }}</p>
+		<p>{{ stack. defeat }}</p>
+	</div>
+	<div class="userStack">
+		<p>{{ stack.KDA }}</p>
+	</div>
+	<div class="userStack">
+		<img ng-src="{{ stack.item }}">
+	</div>
+	<div class="userStack">
+		{{ stack.team }}
+	</div>
+	<div class="userStack">
+		{{ stack.enemy }}
+	</div>
+	<div class="userStack">
+		{{ stack.rank }}
+	</div>
+</div>
+
+<!-- 이름, 레벨, 승패, 캐릭터이미지, KDA, 구매아이템, 아군, 적군, 계급 입니다 -->
