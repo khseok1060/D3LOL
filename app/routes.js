@@ -6,6 +6,7 @@ module.exports = function(app) {
 	// handle things like api calls
 	// authentication routes
 	app.get('/search', userStackController.searchUserStack);
+	app.post('/insert', userStackController.insertUserStack);
 
 	// frontend routes =========================================================
 	// route to handle all angular requests

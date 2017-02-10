@@ -25,5 +25,19 @@ module.exports = {
       .fail(function (error) {
       	res.json( error );
       });
-	}
+	},
+
+  insertUserStack: function(req, res, next){
+
+    var nickName = req.body.nickName;
+    let newUserStack = {nickName: nickName};
+
+    createWord( newUserStack )
+      .then(function(result){
+        res.json( result.length );
+      })
+      .fail(function(err){
+        res.json( error );
+      });
+  }
 };
