@@ -47,12 +47,14 @@ form {
 }
 
 .userContainer {
-    margin-top: 600px;
+    margin-top: 100px;
     border: 1px solid #aaa;
 }
+
 .userStack {
     float: left;
     border: 1px solid #aaa;
-    width: 50px;
+    width: 100px;
     padding: 10px;
+    height: 100px;
 }
