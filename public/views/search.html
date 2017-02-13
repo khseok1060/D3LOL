@@ -10,27 +10,14 @@
 
 <div class="userContainer" ng-repeat="stack in found">
 	<div class="userStack">
-		<img ng-src="{{ stack.charImg }}">
-		<p>{{ stack.nickName }}</p>
-		<p>{{ stack.level }}</p>
+		<p>{{ stack.playerOrTeamName }}</p>
+		<p>{{ stack.leaguePoints }}</p>
 	</div>
 	<div class="userStack">
-		<p>{{ stack.victory }}</p>
-		<p>{{ stack.defeat }}</p>
+		<p>{{ stack.wins }}</p>
+		<p>{{ stack.losses }}</p>
 	</div>
 	<div class="userStack">
-		<p>{{ stack.KDA }}</p>
-	</div>
-	<div class="userStack">
-		<img ng-src="{{ stack.item }}">
-	</div>
-	<div class="userStack">
-		{{ stack.team }}
-	</div>
-	<div class="userStack">
-		{{ stack.enemy }}
-	</div>
-	<div class="userStack">
-		{{ stack.rank }}
+		{{ stack.division }}
 	</div>
 </div>
