@@ -1,3 +1,3 @@
-module.exports = {
-	url : 'mongodb://localhost/searchstack'
-}
+var mongoose = require('mongoose');
+
+module.exports = mongoose.connect('mongodb://localhost/searchStack');
