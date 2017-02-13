@@ -3,5 +3,34 @@
 </div>
 
 <form>
-    <input type="text" ng-model='keyword' placeholder="유저 닉네임...유저 닉네임...유저 닉네임...유저 닉네임...검색..." ng-keydown="$event.which === 13 ? search(keyword) : ''">
+	<input type="text" ng-model='keyword' placeholder="유저 닉네임...유저 닉네임...유저 닉네임...유저 닉네임...검색..." ng-keydown="$event.which === 13 ? search(keyword) : ''">
 </form>
+
+
+
+<div class="userContainer" ng-repeat="stack in found">
+	<div class="userStack">
+		<img ng-src="{{ stack.charImg }}">
+		<p>{{ stack.nickName }}</p>
+		<p>{{ stack.level }}</p>
+	</div>
+	<div class="userStack">
+		<p>{{ stack.victory }}</p>
+		<p>{{ stack.defeat }}</p>
+	</div>
+	<div class="userStack">
+		<p>{{ stack.KDA }}</p>
+	</div>
+	<div class="userStack">
+		<img ng-src="{{ stack.item }}">
+	</div>
+	<div class="userStack">
+		{{ stack.team }}
+	</div>
+	<div class="userStack">
+		{{ stack.enemy }}
+	</div>
+	<div class="userStack">
+		{{ stack.rank }}
+	</div>
+</div>

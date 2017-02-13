@@ -1,5 +1,4 @@
 // grab the mongoose module
-//var mongoose = require('mongoose');
 var mongoose = require('../../config/db');
 
 // define our nerd model

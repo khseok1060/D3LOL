@@ -1,1 +1,1 @@
-angular.module('searchstack', ['ngRoute', 'appRoutes', 'searchService', 'searchCtrl']);  
+angular.module('searchstack', ['ngRoute', 'appRoutes', 'rankService', 'rankCtrl', 'searchService', 'searchCtrl']);  
