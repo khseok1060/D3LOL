@@ -4,7 +4,8 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 
 		// home page
 		.when('/rank', {
-			templateUrl: 'views/rank.html'
+			templateUrl: 'views/rank.html',
+			controller : 'rankController'
 		})
 
 		.when('/multiSearch', {

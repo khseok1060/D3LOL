@@ -1,5 +1,5 @@
 angular.module('searchService', [])
-	.factory('nickNameInfo', function($http) {
+	.factory('nickNameInfo', function($http){
 		var search = function(nickName){
 			return $http({
 				method : 'GET',
@@ -7,12 +7,11 @@ angular.module('searchService', [])
 				params : { keyword : nickName }
 			})
 			.then(function(res){
+				console.log(111)
 				return res.data;
-			});
+			})
 		}
-
 		return {
 			search : search
-		};	
-	
-	});
+		}
+	})

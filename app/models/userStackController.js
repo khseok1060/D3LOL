@@ -6,16 +6,18 @@ var findUserStack = Q.nbind(userStack.find, userStack);
 
 module.exports = {
   searchUserStack: function(req, res, next){
-  	console.log('nickName = ', req.query.nickName );
+  	console.log('nickName = ', req.query.keyword );
 
-    let query = {
-    	nickname: req.query.nickName
-    };
+    let query = {};
 
+    // query['playerOrTeamName'] = { "$regex": req.query.keyword };
+    query['wins'] = 93;
+   
   	findUserStack( query )
-      .then(function(userStack) {
-      	if( userStack.length ) {
-      		res.send( userStack );
+      .then(function(info) {
+        console.log('then::::', info)
+      	if( info.length ) {
+      		res.send( info );
         } 
         else {
           res.json( [] );
@@ -23,14 +25,15 @@ module.exports = {
       	
       })
       .fail(function (error) {
+        console.log('error::::', error)
       	res.json( error );
       });
 	},
 
   insertUserStack: function(req, res, next){
 
-    var nickName = req.body.nickName;
-    let newUserStack = {nickName: nickName};
+    var nickName = req.body.keyword;
+    let newUserStack = {keyword: nickName};
 
     createWord( newUserStack )
       .then(function(result){
